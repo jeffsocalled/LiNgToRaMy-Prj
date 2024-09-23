@@ -46,13 +46,13 @@ systemctl daemon-reload
 systemctl start tomcat
 systemctl enable tomcat
 
-git clone -b main https://github.com/hkhcoder/vprofile-project.git
-cd vprofile-project
+git clone -b main https://github.com/jeffsocalled/LiNgToRaMy-Prj.git
+cd LiNgToRaMy-Prj
 mvn install
 systemctl stop tomcat
 sleep 20
 rm -rf /usr/local/tomcat/webapps/ROOT*
-cp target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
+cp target/LiNgToRaMy-Prj.war /usr/local/tomcat/webapps/ROOT.war
 systemctl start tomcat
 sleep 20
 systemctl stop firewalld
